@@ -17,15 +17,24 @@ public class AnimaleCaratteristiche {
         passerotto.dormi();
         passerotto.verso();
         passerotto.mangia();
+        faiVolare((Volante) passerotto);
 
         System.out.println("\nAquila:");
         aquila.dormi();
         aquila.verso();
         aquila.mangia();
+        faiVolare((Volante) aquila);
 
         System.out.println("\nDelfino:");
         delfino.dormi();
         delfino.verso();
         delfino.mangia();
+        faiNuotare((Nuotante)delfino);
+    }
+    public static void faiVolare(Volante animale){
+        animale.vola();
+    }
+    public static void faiNuotare(Nuotante animale){
+        animale.nuota();
     }
 }
